@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F7F7F7;
+}
+
+header{
+    display: flex;
+    padding: 0 100px;
+    background-color: orange;
+    color: white;
+    width: 100%;
+    height: 75px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1{
+    font-weight: 600;
+    font-family: cursive;
+}
+
+.hdiv{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.sec{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background-color: transparent;
+    color: white;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    transition: 0.4s;
+}
+
+#sec:hover{
+    width: 175px;
+    height: 65px;
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px 2px white;
+}
+
+.sec h1{
+    font-size: 36px;
+}
+
+.emptyCart{
+    width: 1000px;
+    z-index: 100;
+}
+
+#sec img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border: 2px dashed white;
+    border-radius: 50%;
+}
+
+.hdiv a:hover{
+    box-shadow: 0 0 20px 2px white;
+    padding: 12px 17px;
+    font-size: 20px;
+    text-shadow: 0 0 5px black;
+}
+
+.hdiv a{
+    border: 2px dashed white;
+    border: 2px dashed white;
+    background-color: transparent;
+    color: white;
+    padding: 8px 13px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.2s;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.coolh1{
+    color: white;
+    font-size: 65px;
+    background-color: orange;
+    height: 150px;
+    font-family: cursive;
+    text-shadow: 0 0 3px black;
+    letter-spacing: 5px;
+    box-shadow: inset 0 0 25px 2px white, 0 0 25px 2px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboveul{
+    width: 1000px;
+    height: 75px;
+    background-color: #ccc;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr 1fr;
+    align-items: center;
+    border-inline: 3px solid black;
+}
+
+.aboveul p{
+    font-size: 18px;
+}
+
+.aboveul h1{
+    padding-left: 100px;
+}
+
+.actuallyul{
+    width: 1000px;
+    min-height: 75px;
+    background-color: #e6e6e6;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.actuallyul li{
+    width: 100%;
+    height: 150px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 5fr 1fr 1fr 1fr;
+    cursor: pointer;
+    border: 1px 3px black;
+}
+
+.actuallyul li:hover{
+    background-color: #f0f0f0;
+}
+
+.somefunct{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.deinitem{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.somefunct button{
+    margin-left: 20px;
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.somefunct button:hover{
+    font-size: 30px;
+}
+
+.somefunct img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.somefunct p{
+    width: 250px;
+}
+
+.deinitem p{
+    font-size: 20px;
+}
+
+.deinitem button{
+    background-color: transparent;
+    border-radius: 50%;
+    font-size: 20px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.totalprice{
+    width: 1000px;
+    text-align: end;
+    margin: 0 auto;
+    position: relative;
+}
+
+.hiddencrt{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 !important;
+}
+
+.checkoutbaby{
+    position: absolute;
+    right: 0;
+    bottom: -60px;
+    z-index: 99;
+    width: 150px;
+    height: 50px;
+    background-color: orange;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-family: cursive;
+    font-weight: 600;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.checkoutbaby:hover{
+    width: 160px;
+    height: 55px;
+    font-size: 18px;
+    box-shadow: 0 0 10px 2px black, inset 0 0 10px white;
+}

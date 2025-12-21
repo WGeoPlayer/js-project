@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="headofall">
+        <h1 class="hname">NetShop</h1>
+        <input type="text" id="searchInput" placeholder="Search products..." oninput="searchProducts()">
+        <div class="hdiv">
+            <button id="signbut" class="login" onclick="signup()">Sign Up</button>
+            <button id="loginbut" class="login" onclick="openlogin()">Log In</button>
+            <button id="signout" class="out" onclick="signOut()">Sign Out</button>
+            <button onclick="checkAndGoToCart()">Cart</button>
+            <section id="sec" class="sec" onclick="checkAndGo()">
+            </section>
+        </div>
+    </header>
+    <div id="opa" class="opa"></div>
+    <form class="opa1" id="signup" onsubmit="register(event)">
+        <h1 class="register">Registration</h1>
+        <button type="button" class="close" onclick="closesignup()">X</button>
+        <div class="mainarea">
+            <h1 id="error-message" class="lol"></h1>
+            <div class="left">
+                <div class="field">
+                    <label for="">firstName</label>
+                    <input type="text" name="firstName" maxlength="20" required>
+                </div>
+                <div class="field">
+                    <label for="">lastName</label>
+                    <input type="text" name="lastName" maxlength="30" required>
+                </div>
+                <div class="field">
+                    <label for="">age</label>
+                    <input type="number" name="age" required>
+                </div>
+                <div class="field">
+                    <label for="">email</label>
+                    <input type="email" name="email" required>
+                </div>
+                <div class="field">
+                    <label for="">password</label>
+                    <input type="password" name="password" minlength="8" required>
+                </div>
+            </div>
+            <div class="right">
+                <div class="field">
+                    <label for="">address</label>
+                    <input type="text" name="address" required>
+                </div>
+                <div class="field">
+                    <label for="">phone</label>
+                    <input type="text" name="phone" value="+995" required>
+                </div>
+                <div class="field">
+                    <label for="">zipcode</label>
+                    <input type="text" name="zipcode" maxlength="4" minlength="4" required>
+                </div>
+                <div class="field">
+                    <label for="">avatar</label>
+                    <input type="text" name="avatar" required>
+                </div>
+                <div class="field">
+                    <label for="">gender</label>
+                    <select name="gender">
+                        <option value="MALE">მამრობითი</option>
+                        <option value="FEMALE">მდედრობითი</option>
+                        <option value="OTHER">სხვა</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <button class="done" type="submit">Register</button>
+    </form>
+    <form class="log" id="login" onsubmit="login(event)">
+        <button type="button" class="close" onclick="closelogin()">X</button>
+        <h1 class="lll">Log In</h1>
+        <div class="field">
+            <label for="">email</label>
+            <input type="email" name="email" required>
+        </div>
+        <div class="field secondchance">
+            <label for="">password</label>
+            <input type="password" name="password" minlength="6" required>
+            <h1 id="error-message-login" class="lol1"></h1>
+        </div>
+        
+        <button class="logbut" type="submit">LOG IN</button>
+    </form>
+    <div class="main">
+        <div class="categories">
+            <div class="uppercat">
+                <button onclick="filterByCategory()">All</button>
+                <button onclick="filterByCategory(2)">Phones</button>
+                <button onclick="filterByCategory(1)">Laptops</button>
+            </div>
+            <button class="justbrands" onclick="toggleBrandList()">Brands</button>
+            <ul id="brandNames" class="brand-list-style"></ul>
+        </div>
+        <section id="cardsec">
+
+        </section>
+    </div>
+    <div id="pagination-container" class="pagination-container">
+    <div class="pagination-controls">
+        <label for="pageSize">Items per page:</label>
+        <select id="pageSize" onchange="changePageSize(this.value)">
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+            <option value="30">30</option>
+            <option value="38">38</option>
+        </select>
+    </div>
+    
+    <div class="pagination-buttons">
+        <button id="prevBtn" onclick="goToPage(currentPage - 1)">← Previous</button>
+        <div id="pageNumbers" class="page-numbers"></div>
+        <button id="nextBtn" onclick="goToPage(currentPage + 1)">Next →</button>
+    </div>
+    </div>
+    <br><br><br><br><br>
+
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

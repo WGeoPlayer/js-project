@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    padding: 0 100px;
+    background-color: orange;
+    color: white;
+    width: 100%;
+    height: 75px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1{
+    font-weight: 600;
+    font-family: cursive;
+}
+
+.hdiv{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.secondchance{
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.hdiv a{
+    border: 2px dashed white;
+    border: 2px dashed white;
+    background-color: transparent;
+    color: white;
+    padding: 8px 13px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.2s;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+header button{
+    border: 2px dashed white;
+    background-color: transparent;
+    color: white;
+    padding: 8px 13px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.2s;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+
+.hdiv a:hover{
+    box-shadow: 0 0 20px 2px white;
+    padding: 12px 17px;
+    font-size: 20px;
+    text-shadow: 0 0 5px black;
+}
+
+header button:hover{
+    box-shadow: 0 0 20px 2px white;
+    padding: 12px 17px;
+    font-size: 20px;
+    text-shadow: 0 0 5px black;
+}
+
+#sec{
+    width: 100%;
+    height: 300px;
+    box-shadow: 0 0 10px black;
+    display: flex;
+    padding: 0 50px;
+    align-items: center;
+    gap: 50px;
+}
+
+#sec img{
+    border-radius: 50%;
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    border: 2px dashed black;
+}
+
+#sec div{
+    display: flex;
+    flex-direction: column;
+}
+
+#sec div h1{
+    margin-bottom: 25px;
+}
+
+#sec button{
+    width: 200px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 15px;
+    color: black;
+}
+
+
+
+
