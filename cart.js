@@ -71,7 +71,7 @@ function updateCartTotal() {
     
     let heading = document.querySelector('.totalprice');
     heading.innerHTML = ""
-    heading.innerHTML = `<button onclick="checkout()" class="checkoutbaby">Check Out</button> Total: $` + total.toFixed(2);
+    heading.innerHTML = `<button class="checkoutbaby">Check Out</button> Total: $` + total.toFixed(2);
 }
 
 function cartItemTemplate(item) {
@@ -144,16 +144,4 @@ function removeItem(productId) {
         body: JSON.stringify({ id: productId })
     })
     .then(() => renderCart())
-}
-function checkout() {
-    
-    let removeButtons = document.querySelectorAll('.somefunct button')
-    
-    removeButtons.forEach((button, index) => {
-        setTimeout(() => {
-            button.click()
-        }, index * 50)
-    })
-    
-    setTimeout(() => location.reload(), 2000)
 }

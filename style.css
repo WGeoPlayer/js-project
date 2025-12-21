@@ -1,10 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-header{
+header {
     display: flex;
     padding: 0 100px;
     background-color: orange;
@@ -23,23 +23,23 @@ header{
     transform: translateY(-100%)
 }
 
-header h1{
+header h1 {
     font-weight: 600;
     font-family: cursive;
 }
 
-.hdiv{
+.hdiv {
     display: flex;
     align-items: center;
     gap: 50px;
 }
 
-.secondchance{
+.secondchance {
     padding-bottom: 20px;
     position: relative;
 }
 
-.hdiv a{
+.hdiv a {
     border: 2px dashed white;
     background-color: transparent;
     color: white;
@@ -52,14 +52,14 @@ header h1{
     text-decoration: none;
 }
 
-.hdiv a:hover{
+.hdiv a:hover {
     box-shadow: 0 0 20px 2px white;
     padding: 12px 17px;
     font-size: 20px;
     text-shadow: 0 0 5px black;
 }
 
-header button{
+header button {
     border: 2px dashed white;
     background-color: transparent;
     color: white;
@@ -71,14 +71,14 @@ header button{
     font-weight: 600;
 }
 
-header button:hover{
+header button:hover {
     box-shadow: 0 0 20px 2px white;
     padding: 12px 17px;
     font-size: 20px;
     text-shadow: 0 0 5px black;
 }
 
-.sec1{
+.sec1 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -92,13 +92,13 @@ header button:hover{
     transition: 0.4s;
 }
 
-#sec:hover{
+#sec:hover {
     padding: 5px 20px;
     border-radius: 10px;
     box-shadow: inset 0 0 10px 2px white;
 }
 
-#sec img{
+#sec img {
     width: 50px;
     height: 50px;
     object-fit: cover;
@@ -106,14 +106,14 @@ header button:hover{
     border-radius: 50%;
 }
 
-.sec{
+.sec {
     display: none;
 }
 
 .card {
     width: 250px;
     height: 400px;
-    border: none ;
+    border: none;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -140,7 +140,10 @@ header button:hover{
     padding: 5px 0;
 }
 
-.card h1, .card .prices, .card h3, .card p {
+.card h1,
+.card .prices,
+.card h3,
+.card p {
     transition: transform 0.4s ease, opacity 0.4s ease;
 }
 
@@ -185,16 +188,18 @@ header button:hover{
 }
 
 
-.card:hover img{
+.card:hover img {
     opacity: 0.2;
     transform: scale(1.1);
 }
-.card:hover .discount{
+
+.card:hover .discount {
     display: none !important;
 }
-.card:hover h1, 
-.card:hover .prices, 
-.card:hover h3, 
+
+.card:hover h1,
+.card:hover .prices,
+.card:hover h3,
 .card:hover p {
     transform: translateY(-150px);
 }
@@ -208,14 +213,14 @@ header button:hover{
     max-height: unset;
 }
 
-.card:hover p{
+.card:hover p {
     display: -webkit-box;
     line-clamp: 6 !important;
     line-height: 20px;
-    padding: 5px 0 100px ;
+    padding: 5px 0 100px;
 }
 
-.card:hover{
+.card:hover {
     box-shadow: 0 0 25px 5px black;
 }
 
@@ -238,29 +243,29 @@ header button:hover{
     transform: translateY(0);
 }
 
-.card button:hover{
+.card button:hover {
     box-shadow: 0 0 15px black;
     font-size: 22px;
     color: white;
     text-shadow: 0 0 5px red;
 }
 
-.opa1{
+.opa1 {
     display: none;
 }
 
-.log{
+.log {
     display: none;
 }
 
-.log1{
+.log1 {
     display: flex;
     border: 1px solid black;
     flex-direction: column;
     position: fixed;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     opacity: 1;
     z-index: 11;
     background-color: orange;
@@ -273,18 +278,18 @@ header button:hover{
     border-radius: 25px;
 }
 
-.lll{
+.lll {
     font-family: cursive;
 }
 
-.log .field{
+.log .field {
     display: flex;
     flex-direction: column;
     text-align: start;
     gap: 5px;
 }
 
-.log input{
+.log input {
     width: 100%;
     height: 40px;
     border: none;
@@ -295,13 +300,13 @@ header button:hover{
     background-color: #E8F0FE;
 }
 
-.log label{
+.log label {
     font-size: 18px;
     font-weight: 600;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.logbut{
+.logbut {
     background-color: red;
     color: white;
     font-size: 17px;
@@ -311,18 +316,18 @@ header button:hover{
     border-radius: 25px;
 }
 
-.logbut:hover{
+.logbut:hover {
     box-shadow: 0 0 15px 2px white;
 }
 
-.opa2{
+.opa2 {
     display: flex;
     border: 1px solid black;
     flex-direction: column;
     position: fixed;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     opacity: 1;
     z-index: 11;
     background-color: orange;
@@ -332,11 +337,11 @@ header button:hover{
     padding: 20px;
 }
 
-.opa{
+.opa {
     display: none;
 }
 
-.bc{
+.bc {
     display: unset;
     position: fixed;
     width: 100%;
@@ -348,7 +353,7 @@ header button:hover{
     opacity: 0.9;
 }
 
-.mainarea{
+.mainarea {
     display: flex;
     height: 80%;
     width: 100%;
@@ -357,46 +362,46 @@ header button:hover{
     position: relative;
 }
 
-.left{
+.left {
     width: 50%;
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.right{
+.right {
     width: 50%;
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.right .field{
+.right .field {
     display: flex;
     flex-direction: column;
     text-align: start;
     gap: 5px;
 }
 
-.left .field{
+.left .field {
     display: flex;
     flex-direction: column;
     text-align: start;
     gap: 5px;
 }
 
-.register{
+.register {
     font-size: 35px;
     font-family: cursive;
 }
 
-.mainarea label{
+.mainarea label {
     font-size: 18px;
     font-weight: 600;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.mainarea input{
+.mainarea input {
     height: 35px;
     border: none;
     outline: none;
@@ -406,7 +411,7 @@ header button:hover{
     background-color: #E8F0FE;
 }
 
-.mainarea select{
+.mainarea select {
     height: 35px;
     border: none;
     outline: none;
@@ -416,7 +421,7 @@ header button:hover{
     background-color: #E8F0FE;
 }
 
-.done{
+.done {
     background-color: red;
     color: white;
     font-size: 25px;
@@ -426,11 +431,11 @@ header button:hover{
     border-radius: 25px;
 }
 
-.done:hover{
+.done:hover {
     box-shadow: inset 0 0 5px black, 0 0 15px 5px white
 }
 
-.lol{
+.lol {
     color: red;
     text-shadow: 0 0 5px black;
     font-size: 25px;
@@ -441,7 +446,7 @@ header button:hover{
     transform: translate(-50%, 0);
 }
 
-.lol1{
+.lol1 {
     color: black;
     text-shadow: 0 0 5px black;
     font-size: 19px;
@@ -453,7 +458,7 @@ header button:hover{
     transform: translate(-50%, 0);
 }
 
-.close{
+.close {
     position: absolute;
     border: none;
     background-color: transparent;
@@ -464,32 +469,32 @@ header button:hover{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.out{
+.out {
     display: none;
 }
 
-.fordn{
+.fordn {
     display: none;
 }
 
 #verify-alert {
     animation: slideDown 0.5s ease-out;
     font-family: sans-serif;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.firstclicklol{
-    margin-left:25px; 
-    padding: 10px 15px; 
-    background-color: transparent; 
-    border:1px solid black; 
-    border-radius:3px; 
-    cursor:pointer;
+.firstclicklol {
+    margin-left: 25px;
+    padding: 10px 15px;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 3px;
+    cursor: pointer;
     transition: 0.3s;
     font-size: 14px;
 }
 
-#v-alert{
+#v-alert {
     position: fixed;
     height: 75px;
     display: flex;
@@ -499,7 +504,7 @@ header button:hover{
     z-index: 999999999999999999;
 }
 
-.firstclicklol:hover{
+.firstclicklol:hover {
     padding: 13px 18px;
     border: 2px solid black;
     box-shadow: 0 0 20px 5px white;
@@ -507,19 +512,25 @@ header button:hover{
 }
 
 @keyframes slideDown {
-    from { transform: translateY(-100%); }
-    to { transform: translateY(0); }
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
 }
 
-.main{
+.main {
     width: 100%;
     min-height: 500px;
     display: flex;
     padding: 25px 50px;
     margin-top: 150px;
+    gap: 50px;
 }
 
-.categories{
+.categories {
     width: 20%;
     min-height: 200px;
     border-radius: 20px;
@@ -530,18 +541,24 @@ header button:hover{
     height: fit-content;
     align-self: flex-start;
     padding-bottom: 10px;
+    opacity: 0.5;
+    transition: 0.5s;
 }
 
-.uppercat{
+.categories:hover {
+    opacity: 1;
+}
+
+.uppercat {
     width: 100%;
     height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 5%;
 }
 
-.uppercat button{
+.uppercat button {
     background-color: white;
     color: black;
     padding: 10px 25px;
@@ -551,25 +568,28 @@ header button:hover{
     transition: 0.3s;
 }
 
-.uppercat button:hover{
+.uppercat button:hover {
     box-shadow: 0 0 10px white;
     padding: 12px 27px;
     font-size: 18px;
 }
 
-#brandNames{
+#brandNames {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
     list-style-type: none;
-    width: 50%;
+    width: 80%;
     align-items: start;
     gap: 10px;
-    padding-left: 13px;
+    max-height: 300px;
     font-family: cursive;
     transition: 1s;
+    margin: 0 auto;
 }
 
-#brandNames button{
+#brandNames button {
     background-color: white;
     font-size: 18px;
     padding: 8px 20px;
@@ -579,13 +599,13 @@ header button:hover{
     border: none;
 }
 
-#brandNames button:hover{
+#brandNames button:hover {
     padding: 10px 22px;
     font-size: 20px;
     box-shadow: 0 0 10px white;
 }
 
-.justbrands{
+.justbrands {
     background-color: white;
     font-size: 18px;
     padding: 8px 20px;
@@ -595,7 +615,7 @@ header button:hover{
     border: none;
     display: block;
     margin: 0 auto 10px;
-    width: 75%;
+    width: 80%;
 }
 
 #brandNames {
@@ -619,8 +639,8 @@ header button:hover{
     color: black;
     outline: none;
     background-color: white;
-    transform: translateX(-75px);
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transform: translateX(-50px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 #searchInput:focus {
@@ -631,31 +651,36 @@ header button:hover{
 .pagination-container {
     width: 100%;
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    flex-direction: row-reverse;
+    gap: 10%;
     align-items: center;
     margin-top: 40px;
-    padding: 20px;
+    padding: 20px 5%;
 }
 
 .pagination-controls {
     display: flex;
     gap: 15px;
     align-items: center;
+    font-family: cursive;
 }
 
 .pagination-controls select {
     padding: 8px 12px;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 2px solid orange;
     font-size: 16px;
     cursor: pointer;
+
 }
 
 .pagination-buttons {
     display: flex;
     gap: 10px;
     align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .page-numbers {
@@ -663,18 +688,19 @@ header button:hover{
     gap: 5px;
 }
 
-.pagination-buttons button, .page-numbers button {
+.pagination-buttons button,
+.page-numbers button {
     padding: 10px 15px;
     border: 1px solid orange;
     background-color: white;
-    color: orange;
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
     font-weight: 600;
 }
 
-.pagination-buttons button:hover, .page-numbers button:hover {
+.pagination-buttons button:hover,
+.page-numbers button:hover {
     background-color: orange;
     color: white;
 }
@@ -682,6 +708,7 @@ header button:hover{
 .page-btn.active {
     background-color: orange;
     color: white;
+    font-size: 18px;
 }
 
 .pagination-buttons button:disabled {
@@ -689,3 +716,180 @@ header button:hover{
     cursor: not-allowed;
 }
 
+footer {
+    width: 100%;
+    background-color: orange;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h1 {
+    color: white;
+    font-family: cursive;
+}
+
+@media screen and (max-width:1650px) {
+    .uppercat {
+        width: 100%;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5%;
+    }
+
+    .uppercat button {
+        background-color: white;
+        color: black;
+        padding: 10px 25px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .uppercat button:hover {
+        box-shadow: 0 0 10px white;
+        padding: 12px 27px;
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (max-width:1400px) {
+    #brandNames {
+        max-height: 1000px;
+        gap: 7px;
+    }
+
+    header {
+        padding: 0 50px;
+    }
+
+    #sec h1 {
+        padding: 0;
+    }
+
+    #searchInput {
+        transform: translateX(0);
+        width: 200px;
+    }
+
+    .hdiv {
+        gap: 10px;
+    }
+
+    .pagination-buttons {
+        position: static;
+        text-align: end;
+        transform: translateX(0);
+    }
+}
+
+@media screen and (max-width:850px) {
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .categories {
+        width: 90%;
+        margin: 0 auto;
+        position: static;
+    }
+
+    .uppercat {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 5%;
+    }
+
+    #brandNames {
+        max-height: 200px;
+        align-items: start;
+    }
+
+    .card {
+        border: 1px solid #ccc;
+    }
+
+    header {
+        height: 150px;
+        flex-wrap: wrap;
+    }
+
+    .hdiv {
+        width: 100%;
+    }
+
+    .pagination-container {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100px;
+        padding: 0;
+    }
+
+    footer h1 {
+        font-size: 25px;
+    }
+
+    .opa2 {
+        top: 60%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .opa2 {
+        width: 95%;
+    }
+    .mainarea{
+        gap: 10px;
+    }
+    .lol{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    #brandNames {
+        max-height: 300px;
+        align-items: start;
+    }
+
+    .uppercat {
+        width: 100%;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5%;
+    }
+
+    header {
+        padding: 0 15px;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    footer h1 {
+        font-size: 22px;
+    }
+
+    .main {
+        padding: 25px 25px;
+    }
+    .field{
+        width: 100%;
+    }
+    .mainarea input{
+        width: 95%;
+    }
+}

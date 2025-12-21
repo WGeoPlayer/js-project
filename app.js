@@ -530,3 +530,10 @@ function searchProducts() {
             }
         })
 }
+
+function goToPage(pageNum) {
+    if (pageNum < 1) return
+    currentPage = pageNum
+    loadProductsWithPagination(currentPage, pageSize)
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+}

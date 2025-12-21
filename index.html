@@ -90,9 +90,10 @@
             <input type="password" name="password" minlength="6" required>
             <h1 id="error-message-login" class="lol1"></h1>
         </div>
-        
+
         <button class="logbut" type="submit">LOG IN</button>
     </form>
+    
     <div class="main">
         <div class="categories">
             <div class="uppercat">
@@ -107,26 +108,31 @@
 
         </section>
     </div>
+
     <div id="pagination-container" class="pagination-container">
-    <div class="pagination-controls">
-        <label for="pageSize">Items per page:</label>
-        <select id="pageSize" onchange="changePageSize(this.value)">
-            <option value="5">5</option>
-            <option value="10">10</option>
-            <option value="15">15</option>
-            <option value="20">20</option>
-            <option value="30">30</option>
-            <option value="38">38</option>
-        </select>
+        <div class="pagination-controls">
+            <label for="pageSize">Items per page:</label>
+            <select id="pageSize" onchange="changePageSize(this.value)">
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="15">15</option>
+                <option value="20">20</option>
+                <option value="30">30</option>
+                <option value="38">38</option>
+            </select>
+        </div>
+
+        <div class="pagination-buttons">
+            <button id="prevBtn" onclick="goToPage(currentPage - 1)">← Previous</button>
+            <div id="pageNumbers" class="page-numbers"></div>
+            <button id="nextBtn" onclick="goToPage(currentPage + 1)">Next →</button>
+        </div>
     </div>
-    
-    <div class="pagination-buttons">
-        <button id="prevBtn" onclick="goToPage(currentPage - 1)">← Previous</button>
-        <div id="pageNumbers" class="page-numbers"></div>
-        <button id="nextBtn" onclick="goToPage(currentPage + 1)">Next →</button>
-    </div>
-    </div>
+
     <br><br><br><br><br>
+    <footer>
+        <h1>choose whatever you like it's on me</h1>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
     <script src="app.js"></script>
