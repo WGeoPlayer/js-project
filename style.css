@@ -155,7 +155,7 @@ header button:hover {
     -webkit-box-orient: vertical;
     overflow: hidden;
     line-height: 25px;
-    max-height: 30px;
+    max-height: 25px;
 }
 
 .card h3 {
