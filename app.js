@@ -26,11 +26,11 @@ function loadProductsWithPagination(pageIndex, size) {
 }
 
 function renderPagination(total, size) {
-    let totalPages = Math.ceil(total / size)
+    let totalPages = Math.ceil(total / size);
     
-    let oldPagination = document.querySelector('.pagination-container')
+    let oldPagination = document.querySelector('.pagination-container');
     if (oldPagination) {
-        oldPagination.remove()
+        oldPagination.remove();
     }
     
     let paginationHTML = `
@@ -48,24 +48,49 @@ function renderPagination(total, size) {
             </div>
             
             <div class="pagination-buttons">
-                <button onclick="goToPage(${currentPage - 1})" ${currentPage === 1 ? 'disabled' : ''}>← Previous</button>
+                <button class="page-btn" onclick="goToPage(${currentPage - 1})" ${currentPage === 1 ? 'disabled' : ''}>←</button>
+                <button class="page-btn" onclick="goToPage(1)" ${currentPage === 1 ? 'disabled' : ''}>«</button>
                 
                 <div class="page-numbers">
-    `
-    
-    for (let i = 1; i <= totalPages; i++) {
-        paginationHTML += `<button onclick="goToPage(${i})" class="page-btn ${i === currentPage ? 'active' : ''}">${i}</button>`
+    `;
+
+    // --- SLIDING WINDOW LOGIC (3 BUTTONS) ---
+    let startPage, endPage;
+    if (totalPages <= 3) {
+        startPage = 1;
+        endPage = totalPages;
+    } else {
+        // If near the start
+        if (currentPage === 1) {
+            startPage = 1;
+            endPage = 3;
+        } 
+        // If near the end
+        else if (currentPage === totalPages) {
+            startPage = totalPages - 2;
+            endPage = totalPages;
+        } 
+        // If in the middle, keep current page in center
+        else {
+            startPage = currentPage - 1;
+            endPage = currentPage + 1;
+        }
     }
-    
+
+    for (let i = startPage; i <= endPage; i++) {
+        paginationHTML += `<button onclick="goToPage(${i})" class="page-btn ${i === currentPage ? 'active' : ''}">${i}</button>`;
+    }
+
     paginationHTML += `
                 </div>
                 
-                <button onclick="goToPage(${currentPage + 1})" ${currentPage === totalPages ? 'disabled' : ''}>Next →</button>
+                <button class="page-btn" onclick="goToPage(${totalPages})" ${currentPage === totalPages ? 'disabled' : ''}>»</button>
+                <button class="page-btn" onclick="goToPage(${currentPage + 1})" ${currentPage === totalPages ? 'disabled' : ''}>→</button>
             </div>
         </div>
-    `
+    `;
     
-    cardSection.parentElement.insertAdjacentHTML('afterend', paginationHTML)
+    cardSection.parentElement.insertAdjacentHTML('afterend', paginationHTML);
 }
 
 function goToPage(pageNum) {
